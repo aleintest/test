@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Daño</title>
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <h1>Cálculo de Daño</h1>
+    <form id="formulario">
+        <label for="atk">Atk: </label>
+        <input type="number" id="atk" name="atk"><br>
+        <label for="cdmg">cd: </label>
+        <input type="number" id="cdmg" name="cdmg"><br>
+        <label for="srdLrd">Srd/Lrd: </label>
+        <input type="number" id="srdLrd" name="srdLrd"><br>
+        <label for="pmpierce">P/M pierce%: </label>
+        <input type="number" id="pmpierce" name="pmpierce"><br>
+        <label for="stability">Stability: </label>
+        <input type="number" id="stability" name="stability"><br>
+        <label for="dte">Dte%: </label>
+        <input type="number" id="dte" name="dte"><br>
+        <label for="element">Element: </label>
+        <select id="element" name="element">
+            <option value="0">None</option>
+            <option value="25">25%</option>
+        </select><br>
+        <label for="fUnsheate">Flat unsheate: </label>
+        <input type="number" id="fUnsheate" name="fUnsheate"><br>
+        <label for="unsheate">Unsheate%: </label>
+        <input type="number" id="unsheate" name="unsheate"><br>
+        <label for="lvlpj">Lvl pj: </label>
+        <input type="number" id="lvlpj" name="lvlpj"><br>
+        <label for="mobdef">Mob def: </label>
+        <input type="number" id="mobdef" name="mobdef"><br>
+        <label for="mobresist">Mob resist: </label>
+        <input type="number" id="mobresist" name="mobresist"><br>
+        <label for="lvlmob">Mob lvl: </label>
+        <input type="number" id="lvlmob" name="lvlmob"><br>
+        <label for="skillConstant">Skill constant: </label>
+        <input type="number" id="skillConstant" name="skillConstant"><br>
+        <label for="skillMultiplier">Skill multiplier: </label>
+        <input type="number" id="skillMultiplier" name="skillMultiplier"><br>
+        <label for="skillModifier">Skill modifier: </label>
+        <input type="number" id="skillModifier" name="skillModifier"><br>
+        <label for="proration">Proration: </label>
+        <input type="number" id="proration" name="proration"><br>
+        <label for="comboTag">Combo Tag: </label>
+        <select id="comboTag" name="comboTag">
+            <option value="none">None</option>
+            <option value="smite">Smite</option>
+            <option value="other">Other</option>
+        </select><br>
+        <button type="button" onclick="calcularDano()">Calcular Daño</button>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>
